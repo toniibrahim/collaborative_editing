@@ -120,19 +120,19 @@ public class GUI extends JFrame {
 		getContentPane().add(guiTitle);
 
 		// create GUI Image
-		ImageIcon icon1 = new ImageIcon("image/writing-2.jpg",
+		ImageIcon icon1 = new ImageIcon("/Users/tonii/OneDrive/Documents/collaborative_editing/proj2/image/writing-2.jpg",
 		        "Collaborative Editing");
 		JLabel guiPicture = new JLabel(icon1);
 
 		// create JButton
-		ImageIcon newIcon = new ImageIcon("image/new.png");
+		ImageIcon newIcon = new ImageIcon("/Users/tonii/OneDrive/Documents/collaborative_editing/proj2/image/new.png");
 		createNew = new JButton(newIcon);
 		getContentPane().add(createNew);
 		createNew.addActionListener(new createDocListener());
 		createNew.setToolTipText("Create New File");
 
 		// delete JButton
-		ImageIcon deleteIcon = new ImageIcon("image/delete.png");
+		ImageIcon deleteIcon = new ImageIcon("/Users/tonii/OneDrive/Documents/collaborative_editing/proj2/image/delete.png");
 		delete = new JButton(deleteIcon);
 		getContentPane().add(delete);
 		delete.addActionListener(new deleteDocListener());
@@ -270,12 +270,12 @@ public class GUI extends JFrame {
 		        super.approveSelection();
 		    }
 		};
-		ImageIcon openIcon = new ImageIcon("image/open.png");
+		ImageIcon openIcon = new ImageIcon("/Users/tonii/OneDrive/Documents/collaborative_editing/proj2/image/open.png");
 		openButton = new JButton(openIcon);
 		openButton.addActionListener(new loadDocListener());
 		openButton.setToolTipText("Open a New File");
 		
-		ImageIcon saveIcon = new ImageIcon("image/save.png");
+		ImageIcon saveIcon = new ImageIcon("/Users/tonii/OneDrive/Documents/collaborative_editing/proj2/image/save.png");
 		saveButton = new JButton(saveIcon);
 		saveButton.addActionListener(new saveDocListener());
 		saveButton.setToolTipText("Save and Export");
@@ -356,28 +356,28 @@ public class GUI extends JFrame {
 
 		// left panel: control buttons
 		JPanel controlButtons = new JPanel(new GridLayout(2, 2));
-		ImageIcon cutIcon = new ImageIcon("image/cut.png");
+		ImageIcon cutIcon = new ImageIcon("/Users/tonii/OneDrive/Documents/collaborative_editing/proj2/image/cut.png");
 		cutButton = new JButton(cutAction);
 		cutButton.setText("");
 		cutButton.setIcon(cutIcon);
 		cutButton.setToolTipText("cut");
 		controlButtons.add(cutButton);
 
-		ImageIcon copyIcon = new ImageIcon("image/copy.png");
+		ImageIcon copyIcon = new ImageIcon("/Users/tonii/OneDrive/Documents/collaborative_editing/proj2/image/copy.png");
 		copyButton = new JButton(copyAction);
 		copyButton.setIcon(copyIcon);
 		copyButton.setText("");
 		copyButton.setToolTipText("copy");
 		controlButtons.add(copyButton);
 
-		ImageIcon pasteIcon = new ImageIcon("image/paste.png");
+		ImageIcon pasteIcon = new ImageIcon("/Users/tonii/OneDrive/Documents/collaborative_editing/proj2/image/paste.png");
 		pasteButton = new JButton(pasteAction);
 		pasteButton.setIcon(pasteIcon);
 		pasteButton.setText("");
 		pasteButton.setToolTipText("paste");
 		controlButtons.add(pasteButton);
 
-		ImageIcon selectAllIcon = new ImageIcon("image/selectAll.png");
+		ImageIcon selectAllIcon = new ImageIcon("/Users/tonii/OneDrive/Documents/collaborative_editing/proj2/image/selectAll.png");
 		selectAllButton = new JButton(selectAllAction);
 		selectAllButton.setIcon(selectAllIcon);
 		selectAllButton.setText("");
